@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<head>
+    <title>MY CYCLE -PERIOD TRACKER</title>
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<body>
+
+    <div class="container">
+      <h1>🩸 MyCycle - Period Tracker</h1> 
+      <h2>Cycle History</h2>
+<canvas id="cycleChart" width="300" height="200"></canvas>
+
+      <label for="start-date">Enter your last period start date:</label> 
+      <label for="mood">Select your mood:</label>
+<select id="mood">
+  <option value="Happy">😊 Happy</option>
+  <option value="Sad">😢 Sad</option>
+  <option value="Tired">😴 Tired</option>
+  <option value="Angry">😡 Angry</option>
+  <option value="Anxious">😰 Anxious</option>
+</select>
+
+      <input type="date" id="start-date" />
+    <button onclick="trackPeriod()">Track</button>
+    <div id="result"></div>
+    <script src="script.js"></script>
+    </div>
+</body>
